@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import LandingPage from '@/layout/LandingPage'
 import Inside from '@/layout/Inside'
+import Dashboard from '@/components/Dashboard/index'
 
 Vue.use(Router)
 
@@ -21,7 +22,7 @@ export default new Router({
     {
       path: '/dashboard',
       name: 'Dashboard',
-      component: require('@/components/Dashboard/index')
+      component: Dashboard
     },
     {
       path: '*',
